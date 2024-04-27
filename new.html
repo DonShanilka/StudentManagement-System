@@ -1,206 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+    <meta charset="UTF-8">
+    <title>IJSE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-          <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- <section>
-  <header>
-   <nav class="navbar bg-body-tertiary">
-       <div class="container-fluid">
-           <a class="navbar-brand" href="#">
-           </a>
-           <ul class="nav nav-underline">
-               <li class="nav-item">
-                   <a class="nav-link" href="">Home</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link active" href="index.html">Student Mgt</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="course.html">Course Mgt</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link">Registration</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link">Log
-                       <output></output>
-                   </a>
-               </li>
-           </ul>
-       </div>
-   </nav>
-</header>
-<main>
-   <div class="container">
-       <div class="row mb-5">
-           <div class="col">
-               <center><h3 class="header">Student Management</h3></center>
-           </div>
-       </div>
-       <div class="order_container">
-           <div class="row">
-               <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
-                   <form>
-                       <div class="mb-3">
-                           <label for="customerId" class="form-label">Id</label>
-                           <input type="number" class="form-control" id="customerId">
-                       </div>
-                       <div class="mb-3">
-                           <label for="firstname" class="form-label">First Name</label>
-                           <input type="text" class="form-control" id="fullname">
-                       </div>
-                       <div class="mb-3">
-                           <label for="lastname" class="form-label">Last Name</label>
-                           <input type="text" class="form-control" id="fullname">
-                       </div>
-                       <div class="mb-3">
-                           <label for="address" class="form-label">Address</label>
-                           <textarea class="form-control" id="address" style="height: 100px"></textarea>
-                       </div>
-                       <div class="mt-3">
-                           <button type="button" class="btn btn-outline-success Submit" id="customer_submit">Submit</button>
-                           <button type="button" class="btn btn-outline-warning Update" id="customer_update">Update</button>
-                           <button type="button" class="btn btn-outline-danger Delete" id="customer_delete">Delete</button>
-                           <button type="reset" class="btn btn-outline-secondary reset">Reset</button>
-                       </div>
-                   </form>
-               </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page"><h4>IJSE</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-student">Student</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-course">Course</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Reg">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Logout">Logout</a>
+                </li>
 
-               <div>
-                   <input type="checkbox">GDSE <br>
-                   <input type="checkbox">DEP
-               </div>
-<div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end tb">
-                   <table class="table table-light">
-                       <thead>
-                       <tr class="table-info">
-                           <th scope="col">Id</th>
-                           <th scope="col">First Name</th>
-                           <th scope="col">Last Name</th>
-                           <th scope="col">Address</th>
-                           <th scope="col">GDSE/DEP</th>
-                       </tr>
-                       <tr>
-                           <td>C001</td>
-                           <td>Dulmin</td>
-                           <td>Divanjana</td>
-                           <td>Induruwa</td>
-                           <td>GDSE</td>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-                       </tr>
-                       <tbody></tbody>
-                   </table>
-               </div>
-           </div>
-       </div>
-   </div>
-</main>
- </section>
+<!--Student Management-->
+<section id="student-section">
+    <figure class="text-center" style="margin-top: 5%">
+        <blockquote class="blockquote">
+            <h1>Student Management</h1>
+        </blockquote><hr>
+    </figure>
 
- <section>
-  <header>
-   <nav class="navbar bg-body-tertiary">
-       <div class="container-fluid">
-           <a class="navbar-brand" href="#">
-           </a>
-           <ul class="nav nav-underline">
-               <li class="nav-item">
-                   <a class="nav-link" href="">Home</a>
-               </li>
-               <li class="nav-item">
-                   <span class="nav-link active" href="index.html">Student Mgt</span> 
-               </li>
-               <!-- a tag eka wenuwata span,button ,div kamathi ekak dhaganna puluwan, meka dhanne a tage eka refash wena nisa -->
-               <li class="nav-item">
-                   <span class="nav-link" href="course.html">Course Mgt</span>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link">Registration</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link">Log
-                       <output></output>
-                   </a>
-               </li>
-           </ul>
-       </div>
-   </nav>
-</header>
-<main>
-   <div class="container">
-       <div class="row mb-5">
-           <div class="col">
-               <center><h3 class="header">Course Management</h3></center>
-           </div>
-       </div>
-       <div class="order_container">
-           <div class="row">
-               <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
-                   <form>
-                       <div class="mb-3">
-                           <label for="customerId" class="form-label">Id</label>
-                           <input type="number" class="form-control" id="customerId">
-                       </div>
-                       <div class="mb-3">
-                           <label for="firstname" class="form-label">Course</label>
-                           <input type="text" class="form-control" id="fullname">
-                       </div>
-                       <!-- <div class="mb-3">
-                           <label for="lastname" class="form-label">Last Name</label>
-                           <input type="text" class="form-control" id="fullname">
-                       </div> -->
-                       <div class="mb-3">
-                           <label for="address" class="form-label">Description</label>
-                           <textarea class="form-control" id="address" style="height: 100px"></textarea>
-                       </div>
-                       <div class="mt-3">
-                           <button type="button" class="btn btn-outline-success Submit" id="customer_submit">Submit</button>
-                           <button type="button" class="btn btn-outline-warning Update" id="customer_update">Update</button>
-                           <button type="button" class="btn btn-outline-danger Delete" id="customer_delete">Delete</button>
-                           <button type="reset" class="btn btn-outline-secondary reset">Reset</button>
-                       </div>
-                   </form>
-               </div>
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col"><form>
 
-               <div>
-                   <input type="checkbox">GDSE <br>
-                   <input type="checkbox">DEP
-               </div>
-<div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end tb-2">
-                   <table class="table table-light">
-                       <thead>
-                       <tr class="table-info">
-                           <th scope="col">Id</th>
-                           <th scope="col">Course</th>
-                           <th scope="col">Discription</th>
-                           <th scope="col">GDSE/DEP</th>
-                       </tr>
-                       <tr>
-                           <td>C001</td>
-                           <td>Shanilka</td>
-                           <td>se</td>
-                           <td>GDSE</td>
+                <div class="mb-3">
+                    <label for="id" class="form-label">ID</label>
+                    <input type="text" class="form-control" id="stu-id" aria-describedby="emailHelp">
+                </div>
 
-                       </tr>
-                       <tbody></tbody>
-                   </table>
-               </div>
-           </div>
-       </div>
-   </div>
-</main>
- </section>
- 
- <script src="/assets/jquery-3.7.1.min.js"></script>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="first" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="last" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="emailHelp">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="GDSE">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        GDSE
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="DEP">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        DEP
+                    </label>
+                </div>
+                <br>
+                <br>
 
+                <button type="button" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-primary" id="student-submit">Submit</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-warning">View</button>
+
+
+            </form>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Program</th>
+                    </tr>
+                    </thead>
+                    <tbody id="student-table">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>GDSE</td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Course Management-->
+<section id="course-section">
+    <figure class="text-center" style="margin-top: 5%">
+        <blockquote class="blockquote">
+            <h1>Course Management</h1>
+        </blockquote><hr>
+    </figure>
+
+
+
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col"><form>
+
+                <div class="mb-3">
+                    <label for="id" class="form-label">ID</label>
+                    <input type="number" class="form-control" id="id" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Course Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Description" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Description</label>
+                </div>
+
+                <br>
+                <br>
+
+                <button type="button" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-warning">View</button>
+
+
+            </form>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>GDSE</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consectetur delectus magnam molestias nihil placeat quo quod recusandae vel? Cumque dignissimos dolores ea earum enim magnam praesentium ratione vero.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>DEP</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consectetur delectus magnam molestias nihil placeat quo quod recusandae vel? Cumque dignissimos dolores ea earum enim magnam praesentium ratione vero.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Degree</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consectetur delectus magnam molestias nihil placeat quo quod recusandae vel? Cumque dignissimos dolores ea earum enim magnam praesentium ratione vero.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    $('#student-section').css({
+        display:'none'
+    });
+
+    $('#course-section').css({
+        display: 'none'
+    });
+
+    $('#nav-student').on('click',()=>{
+        $('#student-section').css({
+            display:'block'
+        });
+        $('#course-section').css({
+            display: 'none'
+        });
+    });
+
+    $('#nav-course').on('click',()=>{
+        $('#course-section').css({
+            display: 'block'
+        });
+        $('#student-section').css({
+            display:'none'
+        });
+    });
+
+    //Submit Button Action
+    $('#student-submit').on('click',()=>{
+        var stuid = $('#stu-id').val();
+        var stuFirst = $('#first').val();
+        var stuLast = $('#last').val();
+        var stuAddress = $('#address').val();
+
+        // Radio Button
+        var program = $('input[name="flexRadioDefault"]:checked').val();
+
+        console.log("ID :"+ stuid);
+        console.log("First Name :"+ stuFirst);
+        console.log("Last Name :"+ stuLast);
+        console.log("Address :"+ stuAddress);
+        console.log("Program :"+ program);
+
+        var record = `<tr>
+            <th scope="row" class="stu-id">${stuid}</th>
+            <td class="stu-first-name">${stuFirst}</td>
+            <td class="stu-last-name">${stuLast}</td>
+            <td class="stu-address">${stuAddress}</td>
+            <td class="stu-program">${program}</td>
+        </tr>`;
+        $('#student-table').append(record);
+
+    });
+
+    $("#student-table").on('click','tr',function(){
+        let id = $(this).find(".stu-id").text();
+        let fname = $(this).find(".stu-first-name").text();
+        let lname = $(this).find(".stu-last-name").text();
+        let address = $(this).find(".stu-address").text();
+        let course = $(this).find(".flexRadioDefault1").text();
+
+        $("#stu-id").val(id);
+        $("#first").val(fname);
+        $("#last").val(lname);
+        $("#address").val(address);
+        $(`input[name="exampleRadio"][value=${course}]`).prop('checked').true;
+    });
+
+    // object warga 5i . eken 3k thama godakma use wenne
+    //
+
+
+    
+
+
+</script>
 </body>
 </html>
