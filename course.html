@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            </a>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Student Mgt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Course Mgt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Log
+                        <output></output>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <center><h3 class="header">Course Management</h3></center>
+            </div>
+        </div>
+        <div class="order_container">
+            <div class="row">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                    <form>
+                        <div class="mb-3">
+                            <label for="customerId" class="form-label">Id</label>
+                            <input type="number" class="form-control" id="customerId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">Course</label>
+                            <input type="text" class="form-control" id="fullname">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="lastname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="fullname">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Description</label>
+                            <textarea class="form-control" id="address" style="height: 100px"></textarea>
+                        </div>
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-outline-success Submit" id="customer_submit">Submit</button>
+                            <button type="button" class="btn btn-outline-warning Update" id="customer_update">Update</button>
+                            <button type="button" class="btn btn-outline-danger Delete" id="customer_delete">Delete</button>
+                            <button type="reset" class="btn btn-outline-secondary reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <input type="checkbox">GDSE <br>
+                    <input type="checkbox">DEP
+                </div>
+<div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end tb">
+                    <table class="table table-light">
+                        <thead>
+                        <tr class="table-info">
+                            <th scope="col">Id</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Discription</th>
+                            <th scope="col">GDSE/DEP</th>
+                        </tr>
+                        <tr>
+                            <td>C001</td>
+                            <td>Shanilka</td>
+                            <td>se</td>
+                            <td>GDSE</td>
+
+                        </tr>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

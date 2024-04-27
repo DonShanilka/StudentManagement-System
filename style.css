@@ -1,0 +1,11 @@
+.tb {
+ position: absolute;
+ top: 20%;
+ left: 50%;
+}
+
+.tb-2 {
+ position: absolute;
+ top: 100%;
+ left: 50%;
+}
