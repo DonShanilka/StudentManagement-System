@@ -190,5 +190,28 @@
 <script src="assets/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script type="module" src="assets/student.js"></script>
+
+<script>
+    var count = 0;
+    
+
+    function callMe(){
+        console.log("Called");
+    }
+
+    function callMe2(){
+        console.log("Call me2");
+        ++count;
+        if(count>5){
+            clearInterval(myIntervale);
+        }
+    }
+
+    myIntervale = setInterval(callMe2, 5000);
+
+    setTimeout(callMe, 5000); // dhena time eka pahuwela load wenawa
+    setInterval(callMe, 5000); // meya eka dhigata wadakaranawa 5000ms k idhala
+</script>
+
 </body>
 </html>
