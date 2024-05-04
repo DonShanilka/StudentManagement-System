@@ -1,5 +1,5 @@
 
-export default class StudentModel { // default eken wenne adhala file eken defoult eka
+export default class StudentModel { // default eken wenne adhala file eken defoult eka ganna
     constructor(id,fName,lName,address,program){
         this._id = id;
         this._fName = fName;

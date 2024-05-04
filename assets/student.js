@@ -1,6 +1,7 @@
 import StudentModel from "./StudentModel.js";
+import { students } from "./db.js"; // import student array
 
-var students = [];
+// var students = [];
 var recordIndex;
 
 $('#student-section').css({
