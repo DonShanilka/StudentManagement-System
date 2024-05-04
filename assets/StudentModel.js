@@ -1,4 +1,5 @@
-class StudentModel {
+
+export default class StudentModel { // default eken wenne adhala file eken defoult eka
     constructor(id,fName,lName,address,program){
         this._id = id;
         this._fName = fName;
